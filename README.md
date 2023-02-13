@@ -1,3 +1,5 @@
+Time Taken 2hr
+
 To complete this assignment, we can use a Python web framework such as Flask or Django to create an API server. we can then use a GraphQL library such as Graphene to handle the GraphQL calls at "/gql".
 
 Here is an example implementation using Flask and Graphene:
