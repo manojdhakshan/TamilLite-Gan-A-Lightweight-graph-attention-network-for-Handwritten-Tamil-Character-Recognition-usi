@@ -1,4 +1,4 @@
-To complete this assignment, we can use a Python web framework such as Flask or Django to create an API server. You can then use a GraphQL library such as Graphene to handle the GraphQL calls at "/gql".
+To complete this assignment, we can use a Python web framework such as Flask or Django to create an API server. we can then use a GraphQL library such as Graphene to handle the GraphQL calls at "/gql".
 
 Here is an example implementation using Flask and Graphene:
 
@@ -12,7 +12,7 @@ We also define a Query object type that will serve as the root query for our Gra
 
 Finally, we create a new graphene.Schema object using the Query class as the root query, and add a new URL rule to the Flask app for the "/gql" endpoint, which will be handled by the GraphQLView class provided by the flask_graphql library.
 
-With these steps, you should have a basic Flask-based GraphQL API server set up, ready to be customized and extended as needed to support your specific requirements.
+With these steps, we should have a basic Flask-based GraphQL API server set up, ready to be customized and extended as needed to support your specific requirements.
 
 Run Test_case.py file
 
@@ -22,7 +22,7 @@ Next, we use the assert statement to make various assertions about the response,
 
 Finally, we loop over the branches in the response and make additional assertions about the data, such as checking the presence of the 'node' key, the 'branch' key, the 'bank' key, and the 'ifsc' key.
 
-With these test cases in place, you can run the tests using the pytest command and verify that the API server is working as expected.
+With these test cases in place, we can run the tests using the pytest command and verify that the API server is working as expected.
 
 Finally by Heroku
 
@@ -40,7 +40,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git push heroku master
-Define the environment variables that your app needs in the Heroku environment. You can do this using the Heroku CLI with the heroku config:set command. For example:
+Define the environment variables that your app needs in the Heroku environment. we can do this using the Heroku CLI with the heroku config:set command. For example:
 
 python
 Copy code
@@ -54,4 +54,4 @@ Open the app in a web browser using the heroku open command or by visiting the U
 
 Verify that your API server is up and running by making a request to the GraphQL endpoint.
 
-With these steps, you should have a working API server deployed on Heroku. Of course, there may be additional steps or modifications required depending on the specifics of your app and your requirements. But this should give you a good starting point.
+With these steps, we should have a working API server deployed on Heroku. Of course, there may be additional steps or modifications required depending on the specifics of your app and your requirements. But this should give you a good starting point.
